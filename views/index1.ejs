@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="stylesheets/reset.css" type="text/css" media="all">
+  <link rel="stylesheet" href="stylesheets/layout.css" type="text/css" media="all">
+  <link rel="stylesheet" href="stylesheets/style.css" type="text/css" media="all">
+   <link rel="stylesheet" href="stylesheets/style2.css" type="text/css" media="all">
+  <script type="text/javascript" src="js/jquery-1.6.js" ></script>
+  <script type="text/javascript" src="js/cufon-yui.js"></script>
+  <script type="text/javascript" src="js/cufon-replace.js"></script>  
+  <script type="text/javascript" src="js/Questrial_400.font.js"></script>
+  <script type="text/javascript" src="js/bgSlider.js" ></script>
+  <script type="text/javascript" src="js/script.js" ></script>
+  <script type="text/javascript" src="js/pages.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="js/jcarousellite.js"></script>
+  <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+  <script type="text/javascript" src="js/atooltip.jquery.js"></script>
+   <script src="https://www.google.com/jsapi"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+     <script src="js/chartkick.js"></script>
+     <script src="js/highcharts.js"></script>
+ 
+  
+</head>
+
+<body>
+    
+    <%var temp=0;%>
+    
+<div class="spinner"></div>
+<div id="bgSlider"></div>
+<div class="extra">
+	<div class="main">
+		<div class="box">
+			
+			
+			<i> </i>
+	<div class="s-bar">
+	   <form method="post" action="link">
+		<input type="text" name="test" value="Enter Link" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter Link ';}">
+		
+		<input type="submit" value="nanourl"/>
+	  </form>
+	</div>
+	
+
+		<center>
+		     <div id="mydiv">
+			<table>
+			   
+			    <th>Long Link</th>
+			    <th>Short Link</th>
+			   
+
+
+                
+  ...
+
+			   <tr>
+			      <td><%= longUrl %> </td>
+			      <td><%= shortUrl %> </td>
+			     
+			 </tr>
+			   </div>
+			   
+			   
+			   
+			   
+	
+			</table>
+			</center>
+	
+	<script>
+setTimeout(fade_out, 3000);
+
+function fade_out() {
+  $("#mydiv").fadeOut().empty();
+}
+			       
+			       
+			       
+			       
+ </script>
+	
+			
+			
+
+			<script>
+     
+     console.log("hello world");
+     var request = require("request");
+     var data = JSON.stringify(text2);
+     
+     var url = "http://ec2-52-90-246-21.compute-1.amazonaws.com/UrlTrend/rest/trends?size=5";
+     
+     request({
+    url: url,
+    json: true
+},
+function (error, response, body) {
+
+    if (!error && response.statusCode === 200) {
+        console.log(body) // Print the json response
+        var data = JSON.stringify(body);
+        var obj = JSON.parse(data);
+        console.log(obj[1].count);
+        console.log()
+       
+    
+    }
+})
+     
+     
+     
+     
+     
+ </script>
+			
+			
+			
+			
+			<!--header -->
+			<header>
+			
+				<nav class="menu">
+					<ul id="menu">
+						<li><a href="#!/page_About"><span></span><strong>Trend</strong></a></li>
+						<li><a href="#!/page_Teachers"><span></span><strong>Geocharts</strong></a></li>
+						<li><a href="#!/page_Schedule"><span></span><strong>Platform </strong></a></li>
+					<!--	<li><a href="#!/page_Prices"><span></span><strong>Prices</strong></a></li> -->
+						<li><a href="#!/page_Contact"><span></span><strong>time</strong></a></li>
+					</ul>
+				</nav>
+			</header><div class="ic">More Website Templates @ TemplateMonster.com - September12 2011!</div>
+			<!--header end-->
+			<!--content -->
+			<article id="content">
+				<ul>
+					<li id="page_About">
+						<div class="box1">
+							<div class="inner">
+								<a href="#" class="close" data-type="close"><span></span></a>
+								<div class="wrapper">
+									
+									<div class="table-title">
+
+</div>
+<table class="table-fill">
+<thead>
+<tr>
+<th class="text-left">Website</th>
+<th class="text-left">Our Link</th>
+<th class="text-left">Hits</th>
+
+</tr>
+</thead>
+<% var abc =JSON.parse(link);%>
+<tbody class="table-hover">
+<% for(var i=0; i < abc.length; i++) { %>    
+<tr>
+    <td><%= abc[i].url %></td>
+    <td><%= abc[i].count %></td>
+
+
+</tr>
+<% } %>
+</tbody>
+</table>
+									
+									
+									
+									
+									
+									
+									
+									
+								</div>
+							</div>
+						</div>
+					</li>
+					<li id="page_Teachers">
+						<div class="box1">
+							<div class="inner">
+								<a href="#" class="close" data-type="close"><span></span></a>
+								<div class="wrapper">
+									
+							
+
+    
+    
+    <script>
+      // var Chartkick = {language: "de"};
+    </script>
+   
+
+    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.2/zepto.min.js"></script> -->
+    <!-- <script src="http://code.highcharts.com/highcharts.js"></script> -->
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> -->
+    <!-- <script src="http://code.highcharts.com/2.1.9/highcharts.js"></script> -->
+   
+
+    
+  
+    
+
+    <center><h1>Geo Chart</h1></center>
+    <div id="chart-8" style="height: 300px;"></div>
+ 
+    <script>
+      new Chartkick.GeoChart("chart-8", [["United States",44],["Germany",23],["Brazil",22],["Canada",21],["France",13]]);
+    </script>
+
+    
+      
+    
+
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+								</div>
+							</div>
+						</div>
+					</li>
+					<li id="page_Schedule">
+						<div class="box1">
+							<div class="inner">
+								<a href="#" class="close" data-type="close"><span></span></a>
+								<div class="wrapper">
+									
+<script type="text/javascript">
+$(function () {
+    $('#container').highcharts({
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+        },
+        title: {
+            text: 'Plaform Distribution'
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    }
+                }
+            }
+        },
+        series: [{
+            name: "Brands",
+            colorByPoint: true,
+            data: [{
+                name: "Microsoft Internet Explorer",
+                y: 56.33
+            }, {
+                name: "Chrome",
+                y: 24.03,
+                sliced: true,
+                selected: true
+            }, {
+                name: "Firefox",
+                y: 10.38
+            }, {
+                name: "Safari",
+                y: 4.77
+            }, {
+                name: "Opera",
+                y: 0.91
+            }, {
+                name: "Proprietary or Undetectable",
+                y: 0.2
+            }]
+        }]
+    });
+});
+		</script>
+									
+<div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>			
+									
+									
+									
+									
+									
+									
+								</div>
+							</div>
+						</div>
+					</li>
+					<li id="page_Prices">
+						<div class="box1">
+							<div class="inner">
+								<a href="#" class="close" data-type="close"><span></span></a>
+								<div class="wrapper">
+									
+								</div>
+							</div>
+						</div>
+					</li>
+					<li id="page_Contact">
+						<div class="box1">
+							<div class="inner">
+								<a href="#" class="close" data-type="close"><span></span></a>
+								<div class="wrapper">
+									
+									
+									<script type="text/javascript">
+$(function () {
+    $('#container2').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Hits vs Time Graph'
+        },
+        subtitle: {
+            text: ''
+        },
+        xAxis: {
+            categories: [
+                'day1',
+                'day2',
+                'day3',
+                'day4',
+                'day5',
+                'day6',
+                'day7'
+                
+            ],
+            crosshair: true
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Hits'
+            }
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+        series: [{
+            name: 'Days',
+            data: [42, 33, 34, 39, 52, 75, 57]
+
+        }]
+    });
+});
+		</script>
+
+
+
+<div id="container2" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+									
+							</div>
+						</div>
+					</li>
+					<li id="page_More">
+						<div class="box1">
+							<div class="inner">
+								<a href="#" class="close" data-type="close"><span></span></a>
+								<div class="wrapper">
+									<h2>Read more</h2>
+									<p><strong>Lorem ipsum dolor sit amet, consectetur</strong> adipisicing elit, sed do eiusmod tempor inciddunt ut labore et dolore magna aliqua nostrud exercitation. Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolorreprehenderit in voluptate velit esse cillum dolore. Duis aute irure dolorreprehenderit in voluptate.</p>
+									<div class="wrapper pad_bot1">
+										<figure class="left marg_right1"><img src="images/page2_img1.jpg" alt=""></figure>
+										<p class="pad_bot1"><strong>Ullamco laboris nisi</strong> ut aliquip ex ea commodo consequat. Duis aute irure dolorreprehenderit in voluptate velit esse cillum dolore.</p>
+										<p class="pad_bot1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inciddunt ut.</p>
+									</div>
+									<p class="pad_bot1"><strong>At vero eos et accusamus et iusto odio dignissimos</strong> ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inciddunt ut labore et dolore magna aliqua nostrud exercitation. Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolorreprehenderit in voluptate velit esse cillum dolore. Duis aute irure dolorreprehenderit in voluptate.</p>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</article>
+			<!--content end-->
+		</div>
+	</div>
+	<div class="block"></div>
+</div>
+<div class="bg1">
+	<div class="main">
+			<!--footer -->
+			<footer>
+				<div class="col_1">
+					<div class="wrapper">
+						<div class="bg_spinner"></div>
+						<ul class="pagination">
+							<li class="current"> &nbsp; <a href="images/bg_img1.jpg">1</a></li>
+
+						</ul>
+					</div>
+					
+				</div>
+				<div class="col_2">
+					<span>NanoLink</span> Copyright 2015<br>
+					
+				</div>
+				<!-- {%FOOTER_LINK} -->
+			</footer>
+			<!--footer end-->
+	</div>
+</div>
+<script>
+$(window).load(function() {	
+	$('.spinner').fadeOut();
+	$('body').css({overflow:'inherit'})
+})
+</script>
+</body>
+</html>
